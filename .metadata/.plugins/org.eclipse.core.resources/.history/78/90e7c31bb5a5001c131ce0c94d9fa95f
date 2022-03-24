@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+1.블록 레벨 텍스트 태크<br>
+:혼자서 한 줄을 차지하며 너비가 100% 꽉 차게 표시되는 태그
+
+h태그: heading태그 -제목을 표시하는 태그 h1~h6
+<h1>가장 큰 제목태그</h1>
+<h6>기징 작은 제목태그</h6>
+<br><br>
+<p>
+p태그 : paragrapg 단락을 표시하는 태그로 
+줄바꿈없이 텍스트가 한 줄로 표시됨
+</p>
+<hr>
+
+<p>
+hr태그 : 주제가 바뀌거나 분위기전환을 할떄 가로선 표시
+닫는태그 없음
+</p>
+<div>
+div태그 : 영역을 나누는 블록 역할
+</div>
+<div> div로 감싼
+	<p>--p태그--</p>
+</div>
+<p>p태그로<div>감싼div </div> </p>
+<hr>
+<h2>인라인 레벨 텍스트 태그</h2>
+<p> 한 줄을 차지하지 않는 태그로 화면에 표시되는 컨텐츠 만큼의 너비를 차지한다
+</p>
+<!-- 실행에서 제외하고자 하는 코드는 주석처리 -->
+텍스트를 굵게 표시하는 인라인 레벨 태그
+<strong>굵은 텍스트
+</strong>
+목록을 만드는 태그
+<p>ul(unordered list)</p>
+<p>ol(ordered list)</p>
+<ul>
+	<li>메뉴1</li>
+	<li>메뉴2</li>
+	<li>메뉴3</li>	
+</ul>
+<p>ul 의 list-style-type 이 기본 disc 이다</p>
+<ol start='3' type="A">
+	<li>메뉴1</li>
+	<li>메뉴2</li>
+	<li>메뉴3</li>
+</ol>
+<p>ol의 list-style-type 이 기본 정수 이다<br>
+   숫자, 알파벳, 로마숫자로 순서를 표시한다.<br>
+   시작값을 지정가능: start<br>
+</p>
+
+<h2>표를 만드는 태그</h2>
+<p>table 태그,tr태그(행), td태그(table data)<br>
+
+</p>
+
+
+
+
+
+
+</body>
+</html>
