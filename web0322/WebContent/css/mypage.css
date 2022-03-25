@@ -1,0 +1,17 @@
+@charset "UTF-8";
+a { text-decoration: none; color: inherit; }
+a.btn { 
+		border: solid 1px none;	
+		margin: 10px auto;
+		padding: 3px 15px;
+		border-radius: 15px;
+		background-color: white;
+		color: green;
+		box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+		cursor: pointer;
+	}
+.btn { 
+	display: block;
+	width: 50px;
+	text-align: center;
+}

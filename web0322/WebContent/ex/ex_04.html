@@ -3,7 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title>p164</title>
+<link rel="stylesheet" href="../css/mypage.css">
 <style>
+/* web용 font로 변환해서 가져오기 : https://transfonter.org/ */
+@font-face {
+    font-family: 'Headline R';
+    src: url('../css/fonts/HeadlineR-HM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 	ul { list-style: none;}
 	li { height: 30px}
 	#textarea { margin-top: 15px; width: 400px}
@@ -12,34 +22,41 @@
 		border: 1px solid #333;
 		margin: 20px auto;
 		padding: 30px;
+		/* 투명도 */
+		/* background-color: #336b3e;
+		opacity: 0.5; */
+		background-color: rgba(51, 107, 62,0.5);
 	}
-	label { width: 500px; display: inline-block;}
+	label { width: 530px; display: inline-block;}
+	li { line-height: 30px;}
+	h1 { font-family: 'Headline R' }
 </style>
 </head>
 <body>
+<a class="btn" href="index.html">HOME</a>
 <div class="box">
-<h1>프런트엔드 개발자 지원서</h1>
-<p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
-<hr>
-
-
-<b>개인 정보</b>
-<ul>
-	<li><label>이름 <input type="text" id="name" placeholder="공백 없이 입력하세요"></label></li>
-	<li><label>연락처 <input type="tel" id="tel"></label></li>
-</ul>
-
-<b>지원 분야</b>
-<ul>
-	<li><label><input type="radio" name="field" id="1">웹 퍼블리싱</label></li>
-	<li><label><input type="radio" name="field"id="2">웹 애플리케이션 개발</label></li>
-	<li><label><input type="radio" name="field"id="3">개발 환경 개선</label></li>
-</ul>
-
-<b>지원 동기</b>
-<div><textarea rows="5" cols="60" placeholder="본사 지원 동기를 간략히 써 주세요." id="textarea"></textarea></div>
-<input type="button" id="submit" value="접수하기">
-<input type="button" id="re" value="다시쓰기">
+	<h1>프런트엔드 개발자 지원서</h1>
+	<p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+	<hr>
+	
+	
+	<b>개인 정보</b>
+	<ul>
+		<li><label>이름 <input type="text" id="name" placeholder="공백 없이 입력하세요"></label></li>
+		<li><label>연락처 <input type="tel" id="tel"></label></li>
+	</ul>
+	
+	<b>지원 분야</b>
+	<ul>
+		<li><label><input type="radio" name="field" id="1">웹 퍼블리싱</label></li>
+		<li><label><input type="radio" name="field"id="2">웹 애플리케이션 개발</label></li>
+		<li><label><input type="radio" name="field"id="3">개발 환경 개선</label></li>
+	</ul>
+	
+	<b>지원 동기</b>
+	<div><textarea rows="5" cols="60" placeholder="본사 지원 동기를 간략히 써 주세요." id="textarea"></textarea></div>
+	<input type="submit" id="submit" value="접수하기">
+	<input type="reset" id="re" value="다시쓰기">
 </div>
 
 </body>
