@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>p164</title>
+<style>
+	ul { list-style: none;}
+	li { height: 30px}
+	#textarea { margin-top: 15px; width: 400px}
+	.box { 
+		width: 520px;
+		border: 1px solid #333;
+		margin: 20px auto;
+		padding: 30px;
+	}
+	label { width: 500px; display: inline-block;}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>프런트엔드 개발자 지원서</h1>
+<p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+<hr>
+
+
+<b>개인 정보</b>
+<ul>
+	<li><label>이름 <input type="text" id="name" placeholder="공백 없이 입력하세요"></label></li>
+	<li><label>연락처 <input type="tel" id="tel"></label></li>
+</ul>
+
+<b>지원 분야</b>
+<ul>
+	<li><label><input type="radio" name="field" id="1">웹 퍼블리싱</label></li>
+	<li><label><input type="radio" name="field"id="2">웹 애플리케이션 개발</label></li>
+	<li><label><input type="radio" name="field"id="3">개발 환경 개선</label></li>
+</ul>
+
+<b>지원 동기</b>
+<div><textarea rows="5" cols="60" placeholder="본사 지원 동기를 간략히 써 주세요." id="textarea"></textarea></div>
+<input type="button" id="submit" value="접수하기">
+<input type="button" id="re" value="다시쓰기">
+</div>
+
+</body>
+</html>
