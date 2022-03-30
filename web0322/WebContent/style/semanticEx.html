@@ -2,11 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Semantic</title>
+<title>NCS소개</title>
 
 <style>
-header { width: 1200px; height: 100px;  }
-header nav ul { list-style: none; }
+header { height: 80px; line-height: 80px; border-bottom: 1px solid #aaa;  }
+header nav { width: 1200px; margin: 0 auto;}
+header nav ul { list-style: none; display: inline; margin-right: 30px;
+	font-size: 20px; font-weight: bold; margin: 0; padding: 0;}
 header nav ul li { float: left; display: inline; margin: 0 auto; padding: 20px; cursor: pointer;}
 
 strong { font-size: 16px;}
@@ -23,6 +25,17 @@ footer { height: 100px; margin-top: 50px;}
 footer span { color : red;}
 footer p { font-size: 12px;}
 
+section h1 { text-align: center; }
+section > p { text-align: center; font-size: 18px; }
+article ul li { 
+	display: inline-block;	border: 1px solid #ddd; 
+	height: 50px;	line-height: 50px;		width: 50%;		/*  */
+	box-sizing: border-box;		text-align: center;
+}
+article ul li.on { border: 2px solid #666; border-bottom: 2px solid #fff; }
+ul { list-style: none; margin: 0; padding: 0;}
+
+
 </style>
 </head>
 <body>
@@ -38,6 +51,15 @@ footer p { font-size: 12px;}
 	</nav>
 </header>
 <section>
+	<h1>NCS분류체계</h1>
+	<p>NCS(국가직무능력표준)에 대한 정보를 자세히 확인하실 수 있습니다.</p>
+	<article>
+		<ul>
+			<li class="on">NCS소개</li>
+			<li>분류체계</li>
+		</ul>
+	</article>
+
 
 	<h3>NCS소개</h3>
 	<strong>국가직무능력표준(NCS)란?</strong>
