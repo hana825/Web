@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>개발자 네트워크</title>
+<style>
+	body { width: 100%; margin: 0;}
+	
+	/* section, aside, footer { margin: 0 50px; } */
+	/* nav, section, aside, footer { margin: 0 auto; width: 1200px;}  */
+	
+	nav, section{ margin: 0 auto; width: 1200px;}
+	footer { margin: 0 auto; width: 1200px; position: relative;}
+	
+	header{ background-color: #0670b9; margin: 0 auto; }
+	header nav ul {
+			list-style: none;
+			color: #fff;
+			font-weight: bold;
+			height: 80px;
+			line-height: 80px;
+			margin: 0 auto;
+			text-align: end;
+	}
+	header nav ul li { 
+			display: inline;
+			margin: 10px 20px;
+			padding: 10px 0;
+	}
+	header nav ul li:hover { color: #fff584; cursor: pointer; }
+	header nav ul li:nth-child(5) { border-bottom: 5px solid #fff; color: #fff584; }
+
+	
+	section p { font-size: 15px; 
+				padding-bottom: 20px;
+				border-bottom: 1px solid #777;}
+
+	article ul { list-style: none; margin: 0;
+				height: 50px; padding:0;
+				/* border-bottom: 1px solid #0670b9; */ }
+	article ul li { display: inline;
+					font-size: 15px; 
+					font-weight: bold;
+					padding: 15px 40px; 
+					border: 1px solid #ccc; 
+					box-sizing: border-box;
+					float: left;
+					height: 50px;
+					cursor: pointer;}
+	/* article ul li { border-bottom: 1px solid #0670b9; } */
+	article ul li:first-child { color: #0670b9;
+								 border: 1px solid #0670b9;}
+	/* article ul li:first-child { border-bottom: 2px solid #fff;} */
+	
+	article ul li#on { border-bottom: 2px solid #fff;}
+	article ul li:not(first-child) { border-bottom: 1px solid #0670b9;}
+	article ul li:last-child { width: 630px; border-color: white; border-bottom-color: #0670b9; }
+	
+	
+	table { border-collapse: collapse;
+			margin: 40px 0; width: 1200px;}
+	table tr { height: 50px; text-align: center;}
+	table tr > * { padding: 5px ; }
+	table thead tr {
+			background-color: #eee;
+			border-top: 2px solid #777;
+	}
+	table tr {
+			border-bottom: 1px solid #ccc;
+	}
+	table tbody tr td { text-align: center; }
+	table th:last-child, td:last-child { border-right: 2px solid #fff;}
+	table td:nth-child(2) { text-align: left; font-weight: bold;}
+	table td:nth-child(2):hover { color: #0670b9; text-decoration: underline;}
+	a { color: inherit; text-decoration: none;}
+	
+	
+	aside ul { list-style: none; padding: 20px 0; 
+				border-top: 1px solid #ccc;}
+	aside ul li { display: inline; padding-right: 10px; font-size: 14px;}
+	aside ul li:hover { text-decoration: underline;}
+	aside ul li:nth-child(2) { color: #0670b9; }
+	
+	footer address { font-style: normal; font-size: 14px;}
+	footer p {margin: 0; font-size: 14px;}
+	
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+	<ul>
+		<li>데이터찾기</li>
+		<li>국가데이터맵</li>
+		<li>데이터요청</li>
+		<li>데이터활용</li>
+		<li>정보공유</li>
+		<li>이용안내</li>
+	</ul>
+</nav>
+</header>
+<section>
+<h3>개발자 네트워크</h3>
+<p>개발자들 간의 각종 문제해결 방안, 개발 노하우, 데이터 가공 노하우 등을 자유롭게 참여하여 의견을 나눌 수 있는 공간입니다.</p>
+<article>
+	<ul>
+		<li id="on">개발 노하우</li>
+		<li>OPEN API 활용 문의</li>
+		<li>유용한 사이트</li>
+		<li></li>
+	</ul>
+</article>
+<article>
+	<table>
+	<colgroup>
+		<col width="100px;">
+		<col width="600px;">
+		<col>
+		<col>
+		<col>
+		<col width="100px;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th>No.</th>
+			<th>제목</th>
+			<th>등록자</th>
+			<th>조회수</th>
+			<th>좋아요</th>
+			<th>등록일</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td><a href="">ERR_CONNECTION_TIMED_OUT 오류 python에서 requests를 반복 요청할 때 생기는 문제 해결을 도움 받고 싶습니다.</a></td>
+			<td>조규*</td>
+			<td>94</td>
+			<td>0</td>
+			<td>2022-03-05</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><a href="">C#) 400오류 : 서울올림픽기념국민체육진흥공단_체육시설정보 서비스</a></td>
+			<td>노준*</td>
+			<td>150</td>
+			<td>0</td>
+			<td>2022-01-19</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><a href="">NO OPENAPI SERVICE ERROR가 나네요...</a></td>
+			<td>강정*</td>
+			<td>696</td>
+			<td>0</td>
+			<td>2021-11-06</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><a href="">SERVICE KEY IS NOT REGISTERED ERROR.</a></td>
+			<td>이정*</td>
+			<td>818</td>
+			<td>3</td>
+			<td>2021-10-15</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><a href="">한국소비자원 생필품 및 서비스 가격 정보 api 인증키 에러</a></td>
+			<td>심현*</td>
+			<td>237</td>
+			<td>1</td>
+			<td>2021-10-07</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td><a href="">기상청 API로 날씨 앱 구현 시, 클라이언트에서 직접 호출 하시는지 서버에서 호출 하시는지 궁금합니다.</a></td>
+			<td>박정*</td>
+			<td>541</td>
+			<td>3</td>
+			<td>2021-09-23</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td><a href="">배치 프로세스 관련 문의</a></td>
+			<td>이기*</td>
+			<td>460</td>
+			<td>2</td>
+			<td>2021-08-04</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td><a href="">인증키 관련 문의 드립니다.</a></td>
+			<td>박일*</td>
+			<td>756</td>
+			<td>4</td>
+			<td>2021-07-16</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><a href="">전월세 api 에러코드 99 뭘까요?</a></td>
+			<td>장영*</td>
+			<td>978</td>
+			<td>3</td>
+			<td>2021-07-08</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td><a href="">데이터 분석가 과정 (데잇걸즈 5기) 모집</a></td>
+			<td>허윤*</td>
+			<td>1,038</td>
+			<td>1</td>
+			<td>2021-06-06</td>
+		</tr>
+	</tbody>
+	</table>
+</article>
+</section>
+<footer>
+<aside>
+	<ul>
+		<li><a href="" title="새 창으로 이용약관 열기">이용약관</a></li>
+		<li><a href="" title="새 창으로 개인정보처리방침 열기">개인정보처리방침</a></li>
+		<li><a href="" title="새 창으로 공공데이터포털 소개 열기">공공데이터포털 소개</a></li>
+		<li><a href="" title="분쟁조정신청 바로가기">분쟁조정신청</a></li>
+	</ul>
+</aside>
+	<address>(30116) 세종특별자치시 한누리대로 411(어진동, 행정안전부 별관)대표번호 : 1566-0025문의시간 : 09:00~18:00 (월~금)</address>
+	<p>ⓒ행정안전부. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

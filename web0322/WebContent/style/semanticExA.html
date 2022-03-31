@@ -13,6 +13,9 @@ header nav ul li {
 	display: inline; margin-right: 30px;
 	font-size: 20px; font-weight: bold;
 }		/* 네비게이션메뉴가 동일한 간격으로 보여지도록 오른쪽 마진을 지정 */
+
+header nav ul li:not(:last-child) 	{margin-right: 30px;}
+
 header nav, section, footer div { width: 1200px; margin: 0 auto;}
 article { margin: 40px auto;}
 article p { line-height: 24px;}
@@ -57,6 +60,16 @@ table#ncs tr td:not(first-child) { text-align: center;}
 /* 제외의 가상클래스 :not() */ */
 table#ncs tbody td:first-child { text-indent: 20px; }
 
+
+
+/* p322 인접형제선택자 실습 */
+h4 + p { color: green;}
+
+/* 선택자1 ~ 선택자2 : 선택자1의 형제요소로 선택자1 뒤로 나오는 모든 선택자2 */
+h4 ~ p { background-color: yellow;}
+
+/* p태그의 부모입장에서 볼 때 자식요소 2번째 자식요소인 p태그 */
+p:nth-child(2) { font-weight:bold;  }
 
 
 
