@@ -9,11 +9,13 @@
 	ul { margin: 0; padding: 0; list-style: none; display: inline-block; }
 	a { text-decoration: none; color: inherit;}
 
-	header { background-color:  #0670b9; 
-			height: 100px; line-height: 100px;
+	header {
+			min-width: 1200px; 
+			background-color:  #0670b9; 
 			font-size: 20px; font-weight: bold; color: #fff;
 	}
-	header ul li { float: left; }
+	header ul {display: inline-block; margin: 30px 0 20px;}
+	header ul li { float: left; padding-bottom: 10px;}
 	header nav, section, aside div, footer div { width: 1200px; margin: 0 auto;}
 	header ul li:not(:last-child) { margin-right: 100px;}
 	header ul li.active { color: #fff584; border-bottom: 3px solid #fff; }
@@ -21,16 +23,16 @@
 	h2 + p { border-bottom: 2px solid #666; 
 			padding-bottom: 15px;} /* h2태그 바로 밑에 p태그  */
 	
-	#tab ul { height: 50px; line-height: 50px; 
+	#tab ul { height: 50px; line-height: 50px; box-sizing: border-box;
 			width:100%; border-bottom: 1px solid #0670b9;}
 	#tab ul li { 
-			float: left;	width: 200px; 
+			float: left;	width: 200px; box-sizing: border-box;
 			border: 1px solid #aaa; border-bottom: none;
-			text-align: center; font-weight: bold;
+			text-align: center; font-weight: bold; height: 50px; 
 	}
 	/* 첫번째는 그대로고 나머지는 모양이 ㄱ모양이다. */
 	#tab ul li:not(:first-child) { border-left: none; }
-	#tab ul li.on { border: 1px solid #0670b9; border-bottom: none; 
+	#tab ul li.on { border: 1px solid #0670b9; border-bottom: 1px solid #fff;; 
 					color: #0670b9; } 
 	#search a, #search input { vertical-align: middle;}
 	#search { height: 36px; margin-top: 30px;}
@@ -76,7 +78,28 @@
 	footer { font-size: 12px; }
 	address { font-style: inherit;}
 	footer p { margin-top: 5px;}
-		
+	
+	#popup-background {
+			display: none; 
+			width: 100%; height: 100%; position: fixed; 
+			left: 0; top:0; 
+			/* background-color: rgb(0, 0, 0, 0.3); */
+			background-color: #000; opacity: 0.3;
+	}
+	#popup {
+			display: none;
+			width: 400px; height: 350px; position: fixed;
+			left: 50%; top: 50%;
+			transform: translate(-50%, -50%);
+			border: 2px solid #333;
+	}
+	#popup div { height: 300px; }
+	#popup img { width: 100%; height: 100%;}
+	#popup a { 
+			display: inline-block; width: 100%; background-color:#fff; 
+			height: 50px; line-height: 50px; text-align: center;
+	}
+	
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
@@ -112,7 +135,7 @@
 			<a class="on">제목</a>
 			<a>내용</a>
 			<input type="text" placeholder="검색어를 임력하세요">
-			<input type="button" value="검색">
+			<input type="button" value="검색" onclick="popup('block')">
 		</div>
 	</article>
 	<article  id="tb-list">
@@ -262,6 +285,27 @@
 	<p>ⓒ행정안전부. All rights reserved.</p>
 	</div>
 </footer>
+<div id="popup-background"></div>
+<div id="popup">
+	<div><img src="../images/001.jpg"></div>
+	<a onclick="popup_close('none')">닫기</a>
+</div>
+<script>
+	function popup(value) {
+		document.getElementById('popup').style.display = 'value';
+		document.getElementById('popup-background').style.display = 'value';
+	}
 
+/*
+	function popup_close() {
+		document.getElementById('popup').style.display = 'none';
+		document.getElementById('popup-background').style.display = 'none';
+	}
+	function popup() {
+		document.getElementById('popup').style.display = 'block';
+		document.getElementById('popup-background').style.display = 'block';
+	}
+*/
+</script>
 </body>
 </html>
