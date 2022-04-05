@@ -14,7 +14,7 @@
 		width: 350px; height: 250px;
 		position: absolute;	
 	}
-	ul { list-style: none; margin: 0; padding: 0;}
+	ul {list-style: none; margin: 0; padding: 0;}
 	ul li { float: left; margin: 20px;}
 	ul li:not(last-child) { margin-right: 0;}
 	li {background-color: #c3dbf7;}
@@ -25,6 +25,22 @@
 		transition-timing-function: steps(2, start);
 	}
 	.slide-wrap { width: 980px; }
+	
+	.slide {
+		animation-name: animation_slide;
+		animation-duration: 16s;
+		animation-delay: 4s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	@keyframes animation_slide { 
+		0% { left: 0px; }
+		25% { left: -320px; }
+		50% { left: -640px; }
+		75% { left: -960px; }
+		100% { left: -1280px; }
+	}
+	
 </style>
 
 </head>
